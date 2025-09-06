@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
+/* Light theme (default) */
 :root {
+--primary: #161616; /* Dark gray */
   --background: #ffffff;
   --foreground: #171717;
+   --primary-foreground: #ffffff; /* text on top of primary */
 }
 
 @theme inline {
@@ -14,8 +17,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary: #050505; /* Almost black */
     --background: #0a0a0a;
     --foreground: #ededed;
+     --primary-foreground: #0f172a;
   }
 }
 

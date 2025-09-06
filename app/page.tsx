@@ -1,13 +1,15 @@
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <main className="relative bg-black">
-       <div>
-        <h1>Hello! Portfolio</h1>
-        <p>I'm Hasibur Rahman, a passionate developer specializing in building web applications.</p>
-        <p>Welcome to my portfolio where I showcase my projects and skills.</p>
+      <main className="relative
+       bg-black flex justify-center 
+       items-center flex-col overflow-hidden 
+       mx-auto sm:px-10 px-5">
+       <div className="max-w-7xl w-full">
+       <Hero/>
        </div>
       </main>
 
